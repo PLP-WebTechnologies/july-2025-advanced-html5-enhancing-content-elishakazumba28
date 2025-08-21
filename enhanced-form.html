@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Form</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Culinary Showcase</h1>
+    <p>Explore delicious dishes, watch real cooking videos, and sign up for our newsletter!</p>
+  </header>
+
+  <main>
+    
+    <section>
+      <h2>Popular Dishes</h2>
+      <ul>
+        <li>Spaghetti Carbonara</li>
+        <li>Grilled Salmon with Lemon</li>
+        <li>Classic Margherita Pizza</li>
+        <li>Chocolate Lava Cake</li>
+      </ul>
+
+      <h3>Ingredients for Spaghetti Carbonara:</h3>
+      <ol>
+        <li>200g spaghetti</li>
+        <li>100g pancetta</li>
+        <li>2 large eggs</li>
+        <li>50g Parmesan cheese</li>
+        <li>Black pepper</li>
+      </ol>
+    </section>
+
+    
+    <section>
+      <h2>Nutritional Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dish</th>
+            <th>Calories</th>
+            <th>Protein (g)</th>
+            <th>Fat (g)</th>
+            <th>Carbs (g)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Spaghetti Carbonara</td>
+            <td>450</td>
+            <td>18</td>
+            <td>20</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Grilled Salmon</td>
+            <td>350</td>
+            <td>30</td>
+            <td>18</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Margherita Pizza</td>
+            <td>300</td>
+            <td>12</td>
+            <td>10</td>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <section>
+      <h2>Cooking Media</h2>
+      
+      <h3>Dish Photo</h3>
+      <img src="https://cdn.pixabay.com/photo/2017/01/30/13/50/spaghetti-2027182_1280.jpg" alt="Spaghetti Carbonara">
+
+      <h3>Cooking Video</h3>
+      <video controls width="600">
+        <source src="https://cdn.coverr.co/videos/coverr-cooking-pasta-1634/1080p.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Audio Recipe Instructions</h3>
+      <audio controls>
+        <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_fa48c0c5b0.mp3?filename=cooking-sound-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    
+    <section>
+      <h2>Sign Up for Our Newsletter</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+255 7XX XXX XXX" pattern="\+255\s7\d{2}\s\d{3}\s\d{3}">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="frequency">Newsletter Frequency:</label>
+          <select id="frequency" name="frequency" required>
+            <option value="">Select an option</option>
+            <option value="weekly">Weekly</option>
+            <option value="biweekly">Biweekly</option>
+            <option value="monthly">Monthly</option>
+          </select>
+
+          <p>Select Your Interests:</p>
+          <input type="checkbox" id="recipes" name="interests" value="recipes">
+          <label for="recipes">Recipes</label>
+          <input type="checkbox" id="tips" name="interests" value="tips">
+          <label for="tips">Cooking Tips</label>
+          <input type="checkbox" id="events" name="interests" value="events">
+          <label for="events">Events & Workshops</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Comments</legend>
+          <label for="comments">Message:</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Your message here..."></textarea>
+        </fieldset>
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at <a href="mailto:bytestz59@gmail.com">bytestz59@gmail.com</a></p>
+    <p>&copy; 2025 Culinary Showcase</p>
+  </footer>
+</body>
+</html>
